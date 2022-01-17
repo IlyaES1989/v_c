@@ -11,7 +11,7 @@ if LIB_VERSION:
 
 def main():
     print("Run main")
-    print(f"Pillow version {redis.__version__}")
+    print(f"Redis version {redis.__version__}")
 
     print(f"flask version {flask.__version__}")
 
