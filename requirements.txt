@@ -3,4 +3,3 @@ python-slugify==5.0.2  # https://pypi.org/project/python-slugify/
 redis==3.5.3  # https://pypi.org/project/redis/
 celery==5.1.2   # https://pypi.org/project/celery/
 python-dateutil==2.8.2  # https://pypi.org/project/python-dateutil/
-
