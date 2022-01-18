@@ -14,8 +14,10 @@ RUN apk update \
 COPY ./requirements.txt requirements.txt
 RUN pip install -r /requirements.txt
 
-RUN pip install --target=/custom_folder/flask/1.1.4 flask==1.1.4
-RUN pip install --target=/custom_folder/flask/2.0.2 flask==2.0.2
+COPY ./compose/install_lib /install_lib
+RUN sed -i 's/\r$//g' /install_lib
+RUN chmod +x /install_lib
+RUN /install_lib
 
 COPY ./main.py /app/main.py
 

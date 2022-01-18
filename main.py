@@ -2,7 +2,7 @@ import sys
 import redis
 
 
-LIB_VERSION = "2.0.2"
+LIB_VERSION = "1.1.2"
 
 if LIB_VERSION:
     sys.path.append(f"/custom_folder/flask/{LIB_VERSION}")

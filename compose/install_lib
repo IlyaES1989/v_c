@@ -1,0 +1,11 @@
+#!/bin/sh
+
+LIB_PATH=/custom_folder/flask/
+
+LIB_VERSIONS=1.1.2 2.0.2
+
+for VERSION in 1.1.2 2.0.2
+do
+  echo LIB VERSION $VERSION
+  pip install --target=$LIB_PATH/$VERSION  git+https://github.com/pallets/flask.git@$VERSION
+done
