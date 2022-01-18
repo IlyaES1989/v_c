@@ -1,6 +1,6 @@
 # Запуск проекта
 ```
-docker-compose -f ./v_c/local.yml up --build
+docker-compose -f local.yml up --build
 ```
 В файле ./compose/Dockerfile мы устанавливаем несколько версий библиотеки (в качестве примера выбран flask):
 ```
@@ -19,7 +19,7 @@ v_c_python_1 exited with code 0
 ## Изменяем значение переменной ```LIB_VERSION="1.1.4"``` и билдим контейнер:
 
 ```
-docker-compose -f ./v_c/local.yml up --build
+docker-compose -f local.yml up --build
 ```
 
 При этом в логах:
